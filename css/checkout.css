@@ -1,0 +1,178 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    text-transform: capitalize;
+    font-family:  sans-serif;
+    transition: all .2s linear;
+    position: relative;
+}
+
+.header{
+    position: relative;
+}
+
+.header .nav{
+    height: 70px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+
+}
+ul{
+    display: flex;
+    list-style: none;
+    
+}
+ul li a{
+    font-size: 24px;
+    text-decoration: none;
+    margin: 0 20px;
+    color: black;
+
+}
+.nav .icon i {
+    font-size: 24px;
+    margin: 0 20px;
+
+}
+ul li a:hover{
+    color: green;
+}
+#check{
+    display: none;
+}
+
+.header .icon label i{
+    display: none;
+}
+
+.header .nav .icon{
+    display: flex; 
+}
+
+
+.col1 .inputbox img{
+    height:30px;
+   margin-top: 10px;
+   margin-bottom: 10px;
+}
+
+
+
+
+
+.container .row{
+   display:flex;
+   max-width: 700px;
+   margin: auto;
+   justify-content: center;
+   align-items: center;
+   height: 80vh;
+  
+
+   
+
+
+}
+
+.container .row .col1{
+    flex-basis: 50%;
+    margin-left: 50px;
+    padding: 10px;
+}
+
+.container  .row .col1 .inputbox{
+    margin: 15px 0;
+}
+.container form .row .col1 .inputbox span{
+    margin-bottom: 10px;
+    display :block
+}
+
+.container form .row .col1 .inputbox input{
+    width: 100%;
+    border: 1px solid #ccc;
+    padding: 10px 15px;
+    font-size: 15px;
+    text-transform:none ;
+}
+
+.container{
+    padding: 10px;
+    height: 100vh;
+}
+
+button{
+    padding: 10px;
+    background-color: green;
+    color: white;
+    width: 100%;
+    font-size: 20px;
+    
+}
+
+hr{
+    border: 2px solid green;
+    max-width: 1300px;
+    margin: auto;
+    margin-bottom: 40px;
+}
+
+
+@media screen and (max-width:1062px){
+    .header .icon label i{
+        display:block;
+    }
+     .header .nav .nav1 ul {
+        position: absolute;
+        top: 70px;
+        left: 0;
+        bottom: 10%;
+        display: flex;
+        line-height: 50px;
+        justify-content: flex-end;
+
+       
+       
+       
+      
+      
+       display: none;
+       width: 100%;
+      background-color: olivedrab;
+       z-index: 100;
+    }
+
+    .header .nav .nav1 ul li{
+        background-color: orange;
+        opacity: 0.7;
+    }
+    .header .nav .nav1 ul li a{
+        font-size: 20px;
+        font-weight: 700;
+    }
+   
+   
+
+#check:checked~.header .nav .nav1 ul{
+    display:block;
+
+   
+}
+}
+
+ 
+@media screen and (max-width:600px){
+
+    .container .row{
+        display: grid;
+        grid-template-columns: repeat(1 ,1fr);
+    }
+
+    
+        
+}
+

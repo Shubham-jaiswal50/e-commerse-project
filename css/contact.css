@@ -1,0 +1,253 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    height: 100vh;
+    text-transform: capitalize;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    background-image: url(/image/sky\ scraper123.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    z-index: 100;
+   
+
+}
+
+.contact{
+    position: relative;
+    min-height: 100vh;
+    padding: 50px 100px;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    display: flex;
+    z-index: 200;
+   
+   
+}
+.contact .content{
+   
+    max-width: 800px;
+    text-align: center;
+}
+.contact .content h2{
+    font-size: 36px;
+    font-weight: 500;
+    color: white;
+}
+.contact .content p{
+    
+    font-weight: 300;
+    color: white;
+}
+.container
+{
+    width:100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 30px;
+}
+.container .contactinfo{
+    width:50%;
+    display: flex;
+    flex-direction: column;
+}
+.container .contactinfo .box .icon{
+    width: 60px;
+    height: 60px;
+    background: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    font-size: 22px;
+}
+.container .contactinfo .box .text{
+display: flex;
+margin-left: 20px;
+font-size: 16px;
+color:white;
+font-weight: 300px;
+}
+
+.container .contactinfo .box .text h3{
+    font-weight: 500;
+    color: #00bcd4;
+    
+}
+.contactform{
+    width: 40%;
+    padding: 40px;
+    background: white;
+
+}
+.contactform h2{
+    font-size: 30px;
+    color: #333;
+    font-weight: 500;
+}
+.contactform .inputbox{
+    position: relative;
+    width: 100%;
+    margin-top: 10px;
+}
+.contactform .inputbox input,
+.contactform .inputbox textarea{
+    width: 100%;
+    padding: 5px 0;
+    font-size: 16px;
+    margin: 10px 0;
+    border: none;
+    border-bottom: 2px solid #333; 
+    outline: none;
+    resize: none;
+}
+.contactinfo .box{
+    display: flex;
+    
+    align-items: center;
+    margin: 30px 0;
+}
+.contactform .inputbox span{
+    position: absolute;
+    left: 0;
+    padding: 5px 0;
+    font-size: 16px;
+    margin: 10px 0;
+    pointer-events: none;
+    transition: 0.5s;
+    color: #666;
+}
+.contactform .inputbox input:focus ~span,
+.contactform .inputbox input:valid ~span
+
+{
+    color: #e91e63;
+    font-size: 12px;
+    transform: translateY(-20px);
+}
+
+.contactform .inputbox textarea:focus ~span,
+.contactform .inputbox textarea:valid ~span{
+    color: #e91e63;
+    font-size: 12px;
+    transform: translateY(-20px);
+}
+
+.contactform .inputbox input[type="submit"]{
+    width: 100px;
+    background: #00bcd4;
+    color: white;
+    border: none;
+    cursor: pointer;
+    padding: 10px;
+    font-size: 18px;
+}
+
+.contactinfo .box .text{
+    flex-direction: column;
+    display: flex;
+}
+
+.contact .content h2{
+    font-size: 50px;
+
+}
+.contact .content p{
+    font-size: 20px;
+    line-height: 24px;
+    font-weight: 600;
+}
+.contactinfo .box p{
+   
+}
+.contactinfo .box  h3{
+    font-size: 25px;
+    font-weight: 900;
+}
+
+
+/* body::before{
+    content: "";
+    position: absolute;
+    top:0;
+    left: 0;
+    width: 100%;
+    height: 110vh;
+    background-color: rgba(0,0,0,0.6);
+    body *{
+        z-index: 100;
+    }
+
+} */
+
+.contact{
+    height: 100vh;
+    width: 100%;
+    background-image:linear-gradient(rgba(0,0,0,0.4),rgba(0,0,0,0.4)),url(image/walpaper.jpg);
+    background-position: centre;
+    background-size: cover;
+    position: absolute;
+}
+
+#home{
+    height: 40px;
+    width: 100px;
+    border-radius: 10px;
+    background-color: orangered;
+    margin: auto;
+    margin-top: 30px;
+    padding: 5px;
+    
+    text-align: center;
+    transition: 0.5sec;
+    
+}
+#home a{
+    font-size: 24px;
+    text-decoration: none;
+    text-align: center;
+}
+
+#home:hover{
+    background-color: white;
+    transition: 0.5s;
+
+}
+#home a:hover{
+    color: orange;
+    transition: 0.5s;
+}
+@media screen and (max-width:991px) {
+    .contact{
+        padding: 50px;
+
+        display: flex;
+        flex-direction: column;
+    }
+
+    .container{
+        display: flex;
+        flex-direction: column;
+    }
+
+   
+
+    .container .contactinfo,.contactform{
+        margin-bottom:40px ;
+        width: 100%;
+    }
+
+    .contact{
+        height: auto;
+        width: 100%;
+        background-image:linear-gradient(rgba(0,0,0,0.4),rgba(0,0,0,0.4)),url(/walpaper.jpg);
+        background-position: centre;
+        background-size: cover;
+        position: absolute;
+    }
+}
